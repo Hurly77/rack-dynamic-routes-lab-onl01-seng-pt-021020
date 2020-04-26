@@ -7,7 +7,6 @@ def call(env)
   req = Rack::Request.new(env)
 
 if req.path=="/items"
-  rep.write "Yo"
     resp.write "Route not found"
     resp.status = 404
 end
