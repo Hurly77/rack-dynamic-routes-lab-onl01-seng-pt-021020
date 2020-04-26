@@ -13,6 +13,8 @@ class Application
       else
         resp.write "Item not found"
         resp.status = 400
+      end
+      if req.path.math(/items/)
       else
         resp.write "Route not found"
         resp.status = 404
