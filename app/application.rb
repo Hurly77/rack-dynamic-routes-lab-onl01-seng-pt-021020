@@ -6,7 +6,7 @@ def call(env)
   resp = Rack::Response.new
   req = Rack::Request.new(env)
 if req.path=="/items/price"
-    resp.write ""
+    resp.write @@items[0].price
   else
     resp.write "Route not found"
     resp.status = 404
